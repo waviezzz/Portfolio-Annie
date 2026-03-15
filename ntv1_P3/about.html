@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">  
+    <link rel="stylesheet" href="css/about.css">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+
+
+    <title>About Annie</title>
+
+    </head>
+
+    <body id="body">
+      <!-- NAVIGATION -->
+      <header>
+        <nav class="main-menu grid content-grid-menu add-gutters-menu navbar">
+          <a class="logo" href="main.html"> <img src ="img/logo.png" alt="Logo of my portolio"></a>
+          <div class="menu-container">
+            <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            <a href="main.html" class="navigationItem">Work</a>
+            <a href="about.html" class="navigationItem active">About</a>
+            <a href="resume.html" class="navigationItem">Resume</a>
+          </div>
+           <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+      </header>
+
+      <!-- ABOUT ME -->
+      <section id="about-me">
+        <h2 class="greeting-text">Hello I'm</h2>
+        <h1> ANNIE VO</h1>
+        <p class="intro-text">I’m specialized in Animation, Illustration and Game Visual Design!</p>
+      </section>
+
+
+      <section id="more-about-me">
+
+      <div class="grid content-grid-two more-about-me-container">
+        <div class="more-about-me-detail">
+          <h2 class="more-about-me-title">Who Am I</h2>
+          <p>I am Annie Vo, and I am currently a third-year student majoring in Interactive Arts and Technology at Simon Fraser University. 
+            My journey into design began with a love for illustration and storytelling, which naturally led me to explore animation and visual game design.
+             Along the way, I have acquired expertise in user research, interface/visual design, filmmaking, game creation and illustration. 
+             My goal is to create immersive visual and narratives that connect with diverse audiences as well as address their pain points during their experience to the products while using creativity to bridge stories, emotions, and interactive experiences.
+          </p>
+        </div>
+
+        <div class="more-about-me-detail">
+          <img src ="img/Annie.png" alt="Image of Annie" class="person-image">
+        </div>
+      </div>     
+      </section>
+
+      <section id="skill">
+        <div class="grid content-grid-two skill-container">
+          <div class="skill-detail">
+            <h2 class="skill-heading">Skills</h2>
+            <ul>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Ideation Sketching</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   3D Modeling</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   UI Design</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Animation</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Usability Testing</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Prototyping</li>
+              <li> <img src="img/bullet-point.png" alt="Bullet Point" class="bullet-point">   Sound Design</li>
+            </ul>
+          </div>
+  
+          <div class="skill-detail tool-detail">
+            <h2 class="skill-heading">Tools</h2>
+            <div class="grid content-grid-three">
+              <img src="img/figma-icon.png" alt="Figma Icon">
+              <img src="img/maya-icon.png" alt="Maya Icon">
+              <img src="img/eclipse-icon.png" alt="Eclipse Icon">
+            
+              <img src="img/aftereffect-icon.png" alt="After Effect Icon">
+              <img src="img/premierepro-icon.png" alt="Premiere Pro Icon">
+              <img src="img/illustrator-icon.png" alt="Illustrator Icon">
+      
+              <img src="img/photoshop-icon.png" alt="Photoshop Icon">
+              <img src="img/indesign-icon.png" alt="Indesign Icon">
+              <img src="img/visualstudio-icon.png" alt="Visual Studio Icon">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="black-line"></div>
+
+      <section id="contact">
+        <div class="grid content-grid-three-1 contact-section">
+          <h2> Get In Touch</h2>
+          <div class="contact-container">
+            <a> <img src ="img/email-icon.svg" alt="Email page icon" class="contact-icon"></a>
+            <p>waviezzz@gmail.com</p>
+          </div>
+          <div class="contact-container">
+            <a><img src ="img/linkedin-icon.svg" alt="LinkedIn icon" class="contact-icon"></a>
+            <p><a href="https://www.linkedin.com/in/annievo03/" class="linkedin-link">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="back-to-top">
+        <div class="back-to-top-button-container">
+          <a class="button-nav" href="#body">BACK TO TOP</a>
+        </div>
+      </section>
+      
+      <footer>
+        <div class="grid content-grid-three-2 footer-container">
+          <a href="main.html"> <img src ="img/logo-2.png" class="logo2" alt="Logo of my portolio"></a>
+          <h2>Annie's Portfolio</h2>
+  
+          <div class="footer-menu-container">
+            <a href="main.html" class="footerNavigationItem">Work</a>
+            <a href="about.html" class="footerNavigationItem">About</a>
+            <a href="resume.html" class="footerNavigationItem">Resume</a>
+          </div>
+        </div>
+
+        <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+      </footer>
+      <script>
+        //Active state
+        var header = document.getElementsByClassName("menu-container")[0];
+        var btns = header.getElementsByClassName("navigationItem");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+      
+      
+        //Add hamburger icon
+        const header2 = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+      
+        if (hamburgerBtn && closeMenuBtn) {
+          hamburgerBtn.addEventListener("click", () => {
+            header2.classList.toggle("show-mobile-menu");
+          });
+      
+          closeMenuBtn.addEventListener("click", () => {
+            hamburgerBtn.click();
+          });
+        }
+      </script>
+    </body>
+</html>
