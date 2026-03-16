@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/the-last-cog.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hamburger Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>The Last Cog — Annie's Portfolio</title>
+  </head>
+
+  <body id="body" class="tlc-page">
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="main-menu grid content-grid-menu add-gutters-menu navbar">
+        <a class="logo" href="main.html">
+          <img src="img/logo.png" alt="Logo of my portfolio" />
+        </a>
+        <div class="menu-container">
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            >close</span
+          >
+          <a href="main.html" class="navigationItem active">Work</a>
+          <a href="about.html" class="navigationItem">About</a>
+          <a href="resume.html" class="navigationItem">Resume</a>
+        </div>
+        <a
+          href="https://www.linkedin.com/in/annievo03/"
+          class="tlc-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="tlc-hero">
+      <div class="tlc-hero__overlay" aria-hidden="true"></div>
+      <div class="tlc-hero__content">
+        <h1 class="tlc-hero__title">The Last Cog</h1>
+        <div class="tlc-hero__info">
+          <div class="tlc-hero__info-col">
+            <div class="tlc-hero__info-item">
+              <span class="tlc-hero__label">Position</span>
+              <span class="tlc-hero__value"
+                >Visual Artist &amp; UX/UI Designer</span
+              >
+            </div>
+            <div class="tlc-hero__info-item">
+              <span class="tlc-hero__label">Tools</span>
+              <span class="tlc-hero__value">Figma, Unity</span>
+            </div>
+          </div>
+          <div class="tlc-hero__info-col">
+            <div class="tlc-hero__info-item">
+              <span class="tlc-hero__label">Genre</span>
+              <span class="tlc-hero__value">2D Platformer</span>
+            </div>
+            <div class="tlc-hero__info-item">
+              <span class="tlc-hero__label">Duration</span>
+              <span class="tlc-hero__value">4 weeks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT OBJECTIVE -->
+    <section class="tlc-objective">
+      <div class="tlc-objective__content">
+        <h2 class="tlc-objective__title">Project Objective</h2>
+        <p class="tlc-objective__body">
+          The objective of <italic>The Last Cog </italic>is to create a
+          narrative-driven gameplay experience that combines environmental
+          storytelling with platforming and puzzle-solving mechanics. Through
+          the player's journey up the clocktower, the project aims to gradually
+          uncover the mystery behind the missing chime while encouraging
+          exploration and problem-solving. By integrating traversal challenges
+          and interactive puzzles, the game seeks to immerse players in a
+          suspenseful atmosphere where each discovered item contributes to
+          revealing the story of the silent town.
+        </p>
+      </div>
+    </section>
+
+    <!-- GAMEPLAY VIDEO -->
+    <div class="container_one project-overview">
+      <iframe
+        class="project-video"
+        src="https://www.youtube.com/embed/bfzXxhYpZrw"
+        title="Gameplay Demo"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="grid content-grid-three-2 footer-container">
+        <a href="main.html">
+          <img
+            src="img/logo-2.png"
+            class="logo2"
+            alt="Logo of my portfolio, click to return to main page"
+          />
+        </a>
+        <h2>Annie's Portfolio</h2>
+        <div class="footer-menu-container">
+          <a href="main.html" class="footerNavigationItem">Work</a>
+          <a href="about.html" class="footerNavigationItem">About</a>
+          <a href="resume.html" class="footerNavigationItem">Resume</a>
+        </div>
+      </div>
+      <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+    </footer>
+
+    <script>
+      const header2 = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      if (hamburgerBtn && closeMenuBtn) {
+        hamburgerBtn.addEventListener("click", () => {
+          header2.classList.toggle("show-mobile-menu");
+        });
+        closeMenuBtn.addEventListener("click", () => {
+          hamburgerBtn.click();
+        });
+      }
+    </script>
+  </body>
+</html>
