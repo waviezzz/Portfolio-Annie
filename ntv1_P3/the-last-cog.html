@@ -152,7 +152,7 @@
 
       <div class="tlc-project-overview-inner">
         <div class="tlc-art-grid">
-          <div class="tlc-art-images">
+          <div class="tlc-art-images tlc-ad-images">
             <figure class="tlc-art-figure">
               <img
                 src="img/the-last-cog/art-direction-1.png"
@@ -264,7 +264,7 @@
               <img
                 src="img/the-last-cog/ui-design-1.png"
                 alt="In-game shell menu and HUD"
-                class="tlc-art-img"
+                class="tlc-art-img no-lightbox"
               />
             </figure>
             <figure class="tlc-art-figure tlc-ui-speech">
@@ -400,7 +400,7 @@
       const lightboxImg = document.getElementById("tlc-lightbox-img");
       const lightboxClose = document.getElementById("tlc-lightbox-close");
 
-      document.querySelectorAll(".tlc-art-img").forEach((img) => {
+      document.querySelectorAll(".tlc-art-img:not(.no-lightbox)").forEach((img) => {
         img.addEventListener("click", () => {
           lightboxImg.src = img.src;
           lightboxImg.alt = img.alt;

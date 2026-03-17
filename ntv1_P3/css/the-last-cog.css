@@ -272,6 +272,16 @@
   margin-top: 3rem;
 }
 
+/* 03 Art Direction: start images at "Visual Storytelling" level, not at h2 */
+.tlc-ad-images {
+  padding-top: 5rem;
+}
+
+/* Non-clickable image: no pointer cursor */
+.tlc-art-img.no-lightbox {
+  cursor: default;
+}
+
 /* 04 UI Design: push images to the right edge of their column */
 .tlc-ui-images .tlc-art-figure {
   align-items: flex-end;
