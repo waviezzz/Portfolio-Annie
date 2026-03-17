@@ -151,42 +151,7 @@
       </div>
 
       <div class="tlc-project-overview-inner">
-        <h2>03 Art Direction</h2>
         <div class="tlc-art-grid">
-          <div class="tlc-art-text">
-            <span class="tlc-tag">Visual Storytelling</span>
-            <p class="tlc-project-text">
-              I illustrated the game's narrative cutscenes and several small
-              in-game storytelling elements that players encounter while
-              progressing through the tower. These visual pieces were designed
-              to support the game's mysterious atmosphere and gradually reveal
-              parts of the story as players move closer to the top of the
-              clocktower.
-            </p>
-            <p class="tlc-project-text">
-              The cutscenes were created to communicate emotion, tension, and
-              narrative progression without relying heavily on dialogue. Through
-              composition, lighting, and muted color palettes, the illustrations
-              emphasize the unsettling tone of the silent town and the mystery
-              behind the missing chime.
-            </p>
-            <p class="tlc-project-text">
-              In addition to the cutscenes, I also designed and illustrated
-              collectible narrative objects that players discover while climbing
-              the tower. These small visual elements act as fragments of
-              storytelling, providing hints and contextual details about the
-              events surrounding the clocktower. By placing these objects along
-              the player's journey, the narrative unfolds gradually through
-              exploration rather than direct exposition.
-            </p>
-            <p class="tlc-project-text">
-              Following the project's visual style, I ensured that these
-              narrative assets remained consistent with the overall art
-              direction of the game. This helped maintain a cohesive atmosphere
-              where both cinematic moments and interactive elements contribute
-              to the same mysterious tone.
-            </p>
-          </div>
           <div class="tlc-art-images">
             <figure class="tlc-art-figure">
               <img
@@ -227,6 +192,41 @@
               />
             </figure>
           </div>
+          <div class="tlc-art-text">
+            <h2>03 Art Direction</h2>
+            <span class="tlc-tag">Visual Storytelling</span>
+            <p class="tlc-project-text-2">
+              I illustrated the game's narrative cutscenes and several small
+              in-game storytelling elements that players encounter while
+              progressing through the tower. These visual pieces were designed
+              to support the game's mysterious atmosphere and gradually reveal
+              parts of the story as players move closer to the top of the
+              clocktower.
+            </p>
+            <p class="tlc-project-text-2">
+              The cutscenes were created to communicate emotion, tension, and
+              narrative progression without relying heavily on dialogue. Through
+              composition, lighting, and muted color palettes, the illustrations
+              emphasize the unsettling tone of the silent town and the mystery
+              behind the missing chime.
+            </p>
+            <p class="tlc-project-text-2">
+              In addition to the cutscenes, I also designed and illustrated
+              collectible narrative objects that players discover while climbing
+              the tower. These small visual elements act as fragments of
+              storytelling, providing hints and contextual details about the
+              events surrounding the clocktower. By placing these objects along
+              the player's journey, the narrative unfolds gradually through
+              exploration rather than direct exposition.
+            </p>
+            <p class="tlc-project-text-2">
+              Following the project's visual style, I ensured that these
+              narrative assets remained consistent with the overall art
+              direction of the game. This helped maintain a cohesive atmosphere
+              where both cinematic moments and interactive elements contribute
+              to the same mysterious tone.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -259,7 +259,7 @@
               clearly connecting each item with its story context.
             </p>
           </div>
-          <div class="tlc-art-images">
+          <div class="tlc-art-images tlc-ui-images">
             <figure class="tlc-art-figure">
               <img
                 src="img/the-last-cog/ui-design-1.png"
@@ -363,6 +363,24 @@
       <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
     </footer>
 
+    <!-- LIGHTBOX -->
+    <div
+      class="tlc-lightbox"
+      id="tlc-lightbox"
+      aria-modal="true"
+      role="dialog"
+      aria-label="Image enlarged view"
+    >
+      <button
+        class="tlc-lightbox__close"
+        id="tlc-lightbox-close"
+        aria-label="Close"
+      >
+        &times;
+      </button>
+      <img class="tlc-lightbox__img" id="tlc-lightbox-img" src="" alt="" />
+    </div>
+
     <script>
       const header2 = document.querySelector("header");
       const hamburgerBtn = document.querySelector("#hamburger-btn");
@@ -376,6 +394,35 @@
           hamburgerBtn.click();
         });
       }
+
+      // Lightbox
+      const lightbox = document.getElementById("tlc-lightbox");
+      const lightboxImg = document.getElementById("tlc-lightbox-img");
+      const lightboxClose = document.getElementById("tlc-lightbox-close");
+
+      document.querySelectorAll(".tlc-art-img").forEach((img) => {
+        img.addEventListener("click", () => {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.classList.add("tlc-lightbox--open");
+          document.body.style.overflow = "hidden";
+        });
+      });
+
+      function closeLightbox() {
+        lightbox.classList.remove("tlc-lightbox--open");
+        document.body.style.overflow = "";
+      }
+
+      lightboxClose.addEventListener("click", closeLightbox);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
     </script>
   </body>
 </html>
