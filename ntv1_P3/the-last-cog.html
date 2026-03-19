@@ -54,6 +54,7 @@
     <section class="tlc-hero">
       <div class="tlc-hero__overlay" aria-hidden="true"></div>
       <div class="tlc-hero__content">
+        <p class="up-hero__subtitle">Team Project of 4</p>
         <h1 class="tlc-hero__title">The Last Cog</h1>
         <div class="tlc-hero__info">
           <div class="tlc-hero__info-col">
@@ -87,15 +88,15 @@
       <div class="tlc-objective__content">
         <h2 class="tlc-objective__title">Project Objective</h2>
         <p class="tlc-objective__body">
-          The objective of <italic>The Last Cog </italic>is to create a
-          narrative-driven gameplay experience that combines environmental
-          storytelling with platforming and puzzle-solving mechanics. Through
-          the player's journey up the clocktower, the project aims to gradually
-          uncover the mystery behind the missing chime while encouraging
-          exploration and problem-solving. By integrating traversal challenges
-          and interactive puzzles, the game seeks to immerse players in a
-          suspenseful atmosphere where each discovered item contributes to
-          revealing the story of the silent town.
+          The objective of <i>The Last Cog </i>is to create a narrative-driven
+          gameplay experience that combines environmental storytelling with
+          platforming and puzzle-solving mechanics. Through the player's journey
+          up the clocktower, the project aims to gradually uncover the mystery
+          behind the missing chime while encouraging exploration and
+          problem-solving. By integrating traversal challenges and interactive
+          puzzles, the game seeks to immerse players in a suspenseful atmosphere
+          where each discovered item contributes to revealing the story of the
+          silent town.
         </p>
       </div>
     </section>
@@ -115,10 +116,10 @@
       <div class="tlc-project-overview-inner">
         <h2>01 Project Overview</h2>
         <p class="tlc-project-text">
-          The Last Cog is a narrative-driven game set in a town silenced by the
-          sudden absence of its clocktower chime, leaving residents with an
-          unsettling sense of void. In response to this mysterious event, local
-          officials enlist Kit Walker, a trusted repairer, to restore the
+          <i>The Last Cog </i>is a narrative-driven game set in a town silenced
+          by the sudden absence of its clocktower chime, leaving residents with
+          an unsettling sense of void. In response to this mysterious event,
+          local officials enlist Kit Walker, a trusted repairer, to restore the
           clocktower. The player controls Kit as they navigate dynamic
           platforming challenges and lever-based puzzles, ascending the tower to
           gather items that gradually reveal the haunting mystery behind the
@@ -400,14 +401,16 @@
       const lightboxImg = document.getElementById("tlc-lightbox-img");
       const lightboxClose = document.getElementById("tlc-lightbox-close");
 
-      document.querySelectorAll(".tlc-art-img:not(.no-lightbox)").forEach((img) => {
-        img.addEventListener("click", () => {
-          lightboxImg.src = img.src;
-          lightboxImg.alt = img.alt;
-          lightbox.classList.add("tlc-lightbox--open");
-          document.body.style.overflow = "hidden";
+      document
+        .querySelectorAll(".tlc-art-img:not(.no-lightbox)")
+        .forEach((img) => {
+          img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add("tlc-lightbox--open");
+            document.body.style.overflow = "hidden";
+          });
         });
-      });
 
       function closeLightbox() {
         lightbox.classList.remove("tlc-lightbox--open");
