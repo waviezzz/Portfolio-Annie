@@ -97,6 +97,30 @@ li {
 }
 
 /* NAVIGATOR */
+.nav-linkedin {
+  font-family: "Comfortaa", serif;
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #202020;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  white-space: nowrap;
+  align-self: center;
+  margin-left: 1.5rem;
+  margin-bottom: 0.4rem;
+  transition: opacity 0.2s ease;
+}
+
+.nav-linkedin:hover {
+  opacity: 0.6;
+}
+
+@media (width < 37rem) {
+  .nav-linkedin {
+    display: none;
+  }
+}
+
 header {
   width: 100%;
 }
@@ -366,7 +390,7 @@ footer h2 {
 
 @media (width > 82rem) {
   .content-grid-menu {
-    grid-template-columns: 0.7fr 3fr 0.2fr;
+    grid-template-columns: 0.7fr 2.2fr 0.5fr 0.2fr;
   }
 
   .content-grid-two {
@@ -412,7 +436,7 @@ footer h2 {
 
 @media (min-width: 55rem) and (max-width: 82rem) {
   .content-grid-menu {
-    grid-template-columns: 0.7fr 3fr 0.2fr;
+    grid-template-columns: 0.7fr 2.2fr 0.5fr 0.2fr;
   }
 
   .content-grid-two {

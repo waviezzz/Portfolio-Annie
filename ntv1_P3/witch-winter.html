@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/witch-winter.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hamburger Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Witch's Winter — Annie's Portfolio</title>
+  </head>
+
+  <body id="body" class="ww-page">
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="main-menu grid content-grid-menu add-gutters-menu navbar">
+        <a class="logo" href="main.html">
+          <img src="img/logo.png" alt="Logo of my portfolio" />
+        </a>
+        <div class="menu-container">
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            >close</span
+          >
+          <a href="main.html" class="navigationItem active">Work</a>
+          <a href="about.html" class="navigationItem">About</a>
+          <a href="resume.html" class="navigationItem">Resume</a>
+        </div>
+        <a
+          href="https://www.linkedin.com/in/annievo03/"
+          class="ww-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="ww-hero">
+      <div class="ww-hero__overlay" aria-hidden="true"></div>
+      <div class="ww-hero__content">
+        <p class="ww-hero__subtitle">Team Project of 5</p>
+        <h1 class="ww-hero__title">Witch's Winter</h1>
+        <div class="ww-hero__info">
+          <div class="ww-hero__info-col">
+            <div class="ww-hero__info-item">
+              <span class="ww-hero__label">Position</span>
+              <span class="ww-hero__value">Visual Artist</span>
+            </div>
+            <div class="ww-hero__info-item">
+              <span class="ww-hero__label">Tools</span>
+              <span class="ww-hero__value">Figma, Unity</span>
+            </div>
+          </div>
+          <div class="ww-hero__info-col">
+            <div class="ww-hero__info-item">
+              <span class="ww-hero__label">Genre</span>
+              <span class="ww-hero__value">2D Side-scrolling Platformer</span>
+            </div>
+            <div class="ww-hero__info-item">
+              <span class="ww-hero__label">Duration</span>
+              <span class="ww-hero__value">15 weeks</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT OBJECTIVE -->
+    <section class="ww-objective">
+      <div class="ww-objective__content">
+        <h2 class="ww-objective__title">Concept Statement</h2>
+        <p class="ww-objective__body">
+          An exploration of environment-driven puzzle design where seasonal
+          transformations shape player interaction and progression.
+        </p>
+      </div>
+    </section>
+
+    <!-- GAMEPLAY VIDEO -->
+    <div class="container_one project-overview">
+      <iframe
+        class="project-video"
+        src="https://www.youtube.com/embed/paNiRA2_l7Q"
+        title="Witch's Winter Gameplay"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- PROJECT BODY -->
+    <section class="ww-project-body">
+      <div class="ww-project-overview-inner">
+        <h2>01 Project Overview</h2>
+        <p class="ww-project-text">
+          <em>Witch's Winter</em> is a 2D side-scrolling puzzle-platformer where
+          players explore four seasonal environments to recover lost magic and
+          restore balance to the world. Each season introduces unique
+          environmental interactions that influence how players navigate
+          obstacles and solve puzzles.
+        </p>
+        <p class="ww-project-text">
+          The gameplay focuses on using seasonal abilities to manipulate the
+          environment, encouraging players to think strategically as they
+          progress through different areas of the game.
+        </p>
+      </div>
+    </section>
+
+    <section class="ww-in-progress">
+      <p class="ww-in-progress__text">
+        This project is currently under development. The portfolio will be
+        updated with final gameplay, systems, and design outcomes upon
+        completion.
+      </p>
+      <p class="ww-in-progress__text">
+        The video above presents a trailer-style preview, showcasing the visual
+        direction, atmosphere, and early gameplay concepts of the project.
+      </p>
+    </section>
+
+    <section id="back-to-top">
+      <div class="back-to-top-button-container">
+        <a class="button-nav" href="#body">BACK TO TOP</a>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="grid content-grid-three-2 footer-container">
+        <a href="main.html">
+          <img
+            src="img/logo-2.png"
+            class="logo2"
+            alt="Logo of my portfolio, click to return to main page"
+          />
+        </a>
+        <h2>Annie's Portfolio</h2>
+        <div class="footer-menu-container">
+          <a href="main.html" class="footerNavigationItem">Work</a>
+          <a href="about.html" class="footerNavigationItem">About</a>
+          <a href="resume.html" class="footerNavigationItem">Resume</a>
+          <a href="https://www.linkedin.com/in/annievo03/" class="footerNavigationItem" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+    </footer>
+
+    <!-- LIGHTBOX -->
+    <div
+      class="ww-lightbox"
+      id="ww-lightbox"
+      aria-modal="true"
+      role="dialog"
+      aria-label="Image enlarged view"
+    >
+      <button
+        class="ww-lightbox__close"
+        id="ww-lightbox-close"
+        aria-label="Close"
+      >
+        &times;
+      </button>
+      <img class="ww-lightbox__img" id="ww-lightbox-img" src="" alt="" />
+    </div>
+
+    <script>
+      const header2 = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      if (hamburgerBtn && closeMenuBtn) {
+        hamburgerBtn.addEventListener("click", () => {
+          header2.classList.toggle("show-mobile-menu");
+        });
+        closeMenuBtn.addEventListener("click", () => {
+          hamburgerBtn.click();
+        });
+      }
+
+      // Lightbox
+      const lightbox = document.getElementById("ww-lightbox");
+      const lightboxImg = document.getElementById("ww-lightbox-img");
+      const lightboxClose = document.getElementById("ww-lightbox-close");
+
+      document
+        .querySelectorAll(".ww-art-img:not(.no-lightbox)")
+        .forEach((img) => {
+          img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add("ww-lightbox--open");
+            document.body.style.overflow = "hidden";
+          });
+        });
+
+      function closeLightbox() {
+        lightbox.classList.remove("ww-lightbox--open");
+        document.body.style.overflow = "";
+      }
+
+      lightboxClose.addEventListener("click", closeLightbox);
+
+      lightbox.addEventListener("click", (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeLightbox();
+      });
+    </script>
+  </body>
+</html>

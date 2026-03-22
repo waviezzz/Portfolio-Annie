@@ -1,0 +1,437 @@
+/* ============================================================
+   VIETNAMESE BREAKFAST — page-specific styles
+   Scoped entirely to .vb-* classes; does not affect other pages.
+   ============================================================ */
+
+/* ---- HERO ---- */
+.vb-hero {
+  position: relative;
+  background-image: url("../img/project1.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 65vh;
+  display: flex;
+  align-items: flex-start;
+}
+
+.vb-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(32, 32, 32, 0.88);
+  z-index: 1;
+}
+
+.vb-hero__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 5rem 9rem 6rem;
+  color: #f1f1f1;
+}
+
+.vb-hero__subtitle {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  margin: 0 0 0.75rem;
+}
+
+.vb-hero__title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  line-height: 1.15;
+  text-align: left;
+  margin: 0 0 5rem;
+}
+
+.vb-hero__info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 6rem;
+  row-gap: 0;
+}
+
+.vb-hero__info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.vb-hero__info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.vb-hero__label {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #f1f1f1;
+}
+
+.vb-hero__value {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  line-height: 1.5;
+}
+
+/* ---- CONCEPT STATEMENT ---- */
+.vb-objective {
+  padding: 6rem 0 5rem;
+}
+
+.vb-objective__content {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 0 9rem;
+}
+
+.vb-objective__title {
+  font-size: 1.375rem;
+  font-weight: 700;
+  color: #202020;
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+.vb-objective__body {
+  font-size: 4rem;
+  font-weight: 400;
+  font-style: italic;
+  color: #202020;
+  line-height: 1.5;
+  max-width: 100%;
+  margin: 0;
+}
+
+/* ---- VIDEO ---- */
+.vb-video-section {
+  max-width: 94rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 9rem;
+  box-sizing: border-box;
+}
+
+.vb-video-section .project-video {
+  width: 100%;
+  margin-left: 0;
+  aspect-ratio: 16 / 9;
+  display: block;
+}
+
+/* ---- DARK SECTION WRAPPER ---- */
+.vb-project-body {
+  background-color: #202020;
+  border-radius: 2.5rem 2.5rem 0 0;
+  padding-bottom: 6rem;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.vb-project-body h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f1f1f1;
+  margin: 0 0 1.5rem;
+  line-height: 1.2;
+}
+
+/* ---- SECTION INNER CONTAINER ---- */
+.vb-project-overview-inner {
+  max-width: 76rem;
+  margin: 0 auto;
+  padding: 6rem 9rem 0;
+}
+
+/* ---- BODY TEXT ---- */
+.vb-project-text {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  line-height: 1.75;
+  max-width: 100%;
+  margin: 0;
+}
+
+.vb-project-text + .vb-project-text {
+  margin-top: 1.5rem;
+}
+
+/* Add this class for takeaway-text tighter line height */
+.vb-takeaway-text {
+  line-height: 1.6; /* Tighter line height for key takeaways and iteration text */
+}
+
+/* ---- TAG ---- */
+.vb-tag {
+  display: inline-block;
+  width: fit-content;
+  background-color: #e8b4c4;
+  color: #202020;
+  font-size: 1.375rem;
+  font-weight: 400;
+  padding: 0.3rem 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+/* ---- 03 ILLUSTRATION: 2-up image row ---- */
+.vb-img-row {
+  display: grid;
+  grid-template-columns: 1.02fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+  align-items: start;
+}
+
+/* New column wrapper to handle stacking images */
+.vb-img-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* Vertical space between kitchen and color palette */
+}
+
+/* Ensure ALL images in this section have a consistent border radius */
+.vb-img-row img,
+.vb-img-col img {
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.vb-img-figure {
+  margin: 0;
+}
+
+/* ---- 04 DEVELOPMENT (Replicated code formatting/centering) ---- */
+.vb-modeling-grid {
+  display: grid;
+  grid-template-columns: 1.04fr 1fr; /* MATCHES .vb-img-row PERFECTLY */
+  gap: 3rem;
+  align-items: stretch; /* Stretch images to full column width */
+}
+
+.vb-modeling-images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* MATCHES vertical space from section 03 illustration images */
+  justify-content: center;
+  height: 100%;
+}
+
+/* Old modeling images definition can be removed if not used elsewhere */
+.vb-modeling-images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* width: 90%; HAS BEEN REMOVED to align perfectly with the right column */
+}
+
+.vb-code-figure {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.vb-code-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  cursor: zoom-in;
+}
+
+/* THE SOLUTION for continuous white outline */
+.vb-outline-img {
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  box-shadow:
+    0 0 0 2px rgba(241, 241, 241, 0.3) inset,
+    0 4px 12px rgba(0, 0, 0, 0.4);
+  background-clip: padding-box;
+  padding: 2px;
+}
+
+.vb-modeling-text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Old rules that conflict or are not needed with the new grid logic */
+/* .vb-modeling-images { width: 90%; } */ /* Explicity commented out, do not include */
+
+.vb-art-figure {
+  margin: 0;
+}
+
+/* Global vb-art-img rules for consistency */
+.vb-art-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: zoom-in;
+}
+
+.vb-art-img.no-lightbox {
+  cursor: default;
+}
+
+/* ---- 06 KEY TAKEAWAYS: 2×2 grid ---- */
+.vb-takeaways-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem 6rem;
+}
+
+.vb-takeaway {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- SCENE ROW (reflection image) ---- */
+.vb-scene-row {
+  margin-top: 3rem;
+}
+
+.vb-scene-figure {
+  margin: 0;
+}
+
+/* ---- LIGHTBOX ---- */
+.vb-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(20, 20, 20, 0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+.vb-lightbox--open {
+  display: flex;
+}
+
+.vb-lightbox__img {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 4rem rgba(0, 0, 0, 0.6);
+}
+
+.vb-lightbox__close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: #f1f1f1;
+  font-size: 2.5rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.vb-lightbox__close:hover {
+  opacity: 1;
+}
+
+/* ---- Tablet ---- */
+@media (max-width: 55rem) {
+  .vb-hero__content {
+    padding: 4rem 4rem 5rem;
+  }
+
+  .vb-hero__title {
+    font-size: 3rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .vb-hero__label {
+    font-size: 1.5rem;
+  }
+
+  .vb-hero__value {
+    font-size: 1.125rem;
+  }
+
+  .vb-objective__content {
+    padding: 0 4rem;
+  }
+
+  .vb-objective__body {
+    font-size: 2.5rem;
+  }
+
+  .vb-video-section {
+    padding: 0 4rem;
+  }
+
+  .vb-project-overview-inner {
+    padding: 4rem 4rem 0;
+  }
+
+  .vb-img-row {
+    grid-template-columns: 1fr;
+  }
+
+  .vb-modeling-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .vb-takeaways-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Mobile ---- */
+@media (max-width: 37rem) {
+  .vb-hero {
+    min-height: 90vh;
+  }
+
+  .vb-hero__content {
+    padding: 3.5rem 1.75rem 4rem;
+  }
+
+  .vb-hero__title {
+    font-size: 1.85rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .vb-hero__info {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .vb-hero__info-col {
+    gap: 2.5rem;
+  }
+
+  .vb-hero__label {
+    font-size: 1.1rem;
+  }
+
+  .vb-objective__content {
+    padding: 0 1.75rem;
+  }
+
+  .vb-objective__body {
+    font-size: 2rem;
+  }
+
+  .vb-video-section {
+    padding: 0 1.75rem;
+  }
+
+  .vb-project-overview-inner {
+    padding: 3.5rem 1.75rem 0;
+  }
+}

@@ -6,13 +6,13 @@
 /* ---- NAV: 5-column layout to accommodate LinkedIn link ---- */
 @media (width > 82rem) {
   .tlc-page .content-grid-menu {
-    grid-template-columns: 0.7fr 3fr 0.4fr 0.2fr;
+    grid-template-columns: 0.7fr 2.2fr 0.5fr 0.2fr;
   }
 }
 
 @media (min-width: 55rem) and (max-width: 82rem) {
   .tlc-page .content-grid-menu {
-    grid-template-columns: 0.7fr 3fr 0.4fr 0.2fr;
+    grid-template-columns: 0.7fr 2.2fr 0.5fr 0.2fr;
   }
 }
 
@@ -25,6 +25,8 @@
   text-underline-offset: 3px;
   white-space: nowrap;
   align-self: center;
+  margin-left: 1.5rem;
+  margin-bottom: 0.4rem;
   transition: opacity 0.2s ease;
 }
 
@@ -68,8 +70,15 @@
   color: #f1f1f1;
 }
 
+.tlc-hero__subtitle {
+  font-size: 1.375rem;
+  font-weight: 400;
+  color: #f1f1f1;
+  margin: 0 0 0.75rem;
+}
+
 .tlc-hero__title {
-  font-size: 4.5rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: left;
   color: #f1f1f1;
@@ -122,18 +131,19 @@
 }
 
 .tlc-objective__title {
-  font-size: 3rem;
+  font-size: 1.375rem;
   font-weight: 700;
   color: #202020;
   margin: 0 0 1.5rem;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .tlc-objective__body {
-  font-size: 1.375rem;
+  font-size: 4rem;
   font-weight: 400;
+  font-style: italic;
   color: #202020;
-  line-height: 1.75;
+  line-height: 1.5;
   max-width: 100%;
   margin: 0;
 }
