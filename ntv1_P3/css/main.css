@@ -132,8 +132,11 @@ header {
   width: 4rem;
   margin-left: 5rem;
   height: auto;
-  transition-property: width, height;
-  transition-duration: 0.25s;
+  transition: opacity 0.25s ease;
+}
+
+.main-menu .logo:hover img {
+  opacity: 0.6;
 }
 
 .menu-container a {
