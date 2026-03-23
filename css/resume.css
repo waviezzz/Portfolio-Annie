@@ -1,0 +1,10 @@
+#resume {
+  display: flex;
+  justify-content: center;
+}
+
+.resume-image{
+  margin-top: 2rem;
+  width: 87.5%;
+  height: auto;
+}
