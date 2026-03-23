@@ -122,6 +122,7 @@
   margin-left: 0;
   aspect-ratio: 16 / 9;
   display: block;
+  border-radius: 10px;
 }
 
 /* ---- DARK SECTION WRAPPER ---- */
@@ -199,12 +200,20 @@
 /* Ensure ALL images in this section have a consistent border radius */
 .vb-img-row img,
 .vb-img-col img {
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 .vb-img-figure {
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.vb-img-figure:hover img {
+  transform: scale(1.04);
 }
 
 /* ---- 04 DEVELOPMENT (Replicated code formatting/centering) ---- */
@@ -236,20 +245,23 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .vb-code-img {
   max-width: 100%;
   height: auto;
   display: block;
-  border-radius: 1rem;
+  border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   cursor: zoom-in;
-  transition: opacity 0.25s ease;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
-.vb-code-img:hover {
-  opacity: 0.8;
+.vb-code-figure:hover .vb-code-img {
+  transform: scale(1.04);
 }
 
 /* THE SOLUTION for continuous white outline */
@@ -273,6 +285,8 @@
 
 .vb-art-figure {
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 /* Global vb-art-img rules for consistency */
@@ -281,11 +295,12 @@
   height: auto;
   display: block;
   cursor: zoom-in;
-  transition: opacity 0.25s ease;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
-.vb-art-img:hover {
-  opacity: 0.8;
+.vb-art-figure:hover .vb-art-img {
+  transform: scale(1.04);
 }
 
 .vb-art-img.no-lightbox {
@@ -311,6 +326,12 @@
 
 .vb-scene-figure {
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.vb-scene-figure:hover .vb-art-img {
+  transform: scale(1.04);
 }
 
 /* ---- LIGHTBOX ---- */

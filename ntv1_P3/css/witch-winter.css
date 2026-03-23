@@ -161,6 +161,7 @@
   margin-left: 0;
   aspect-ratio: 16 / 9;
   display: block;
+  border-radius: 10px;
 }
 
 /* ---- PROJECT BODY (dark section) ---- */
@@ -248,20 +249,24 @@
   flex-direction: column;
   min-height: 0;
   margin: 0;
+  overflow: hidden;
+  width: 65%;
+  margin-right: 6rem;
+  border-radius: 10px;
 }
 
 .ww-art-img {
-  width: 65%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
-  margin-right: 6rem;
   cursor: zoom-in;
-  transition: opacity 0.25s ease;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
-.ww-art-img:hover {
-  opacity: 0.8;
+.ww-art-figure:hover .ww-art-img {
+  transform: scale(1.04);
 }
 
 .ww-art-caption {
@@ -289,10 +294,7 @@
 
 /* 04 UI Design: push images to right edge of their column */
 .ww-ui-images .ww-art-figure {
-  align-items: flex-end;
-}
-
-.ww-ui-images .ww-art-img {
+  align-self: flex-end;
   margin-right: 0;
 }
 

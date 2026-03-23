@@ -154,13 +154,21 @@
 
 .wsc-concept-figure {
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .wsc-concept-top .wsc-concept-img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0.75rem;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
+
+.wsc-concept-figure:hover .wsc-concept-img {
+  transform: scale(1.04);
 }
 
 .wsc-concept-bottom-row {
@@ -173,7 +181,9 @@
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 0.75rem;
+  cursor: zoom-in;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
 /* ---- PROJECT BODY (dark section) ---- */
@@ -261,20 +271,24 @@
   flex-direction: column;
   min-height: 0;
   margin: 0;
+  overflow: hidden;
+  width: 65%;
+  margin-right: 6rem;
+  border-radius: 10px;
 }
 
 .wsc-art-img {
-  width: 65%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
-  margin-right: 6rem;
   cursor: zoom-in;
-  transition: opacity 0.25s ease;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
-.wsc-art-img:hover {
-  opacity: 0.8;
+.wsc-art-figure:hover .wsc-art-img {
+  transform: scale(1.04);
 }
 
 .wsc-art-caption {
@@ -299,10 +313,7 @@
 }
 
 .wsc-ui-images .wsc-art-figure {
-  align-items: flex-end;
-}
-
-.wsc-ui-images .wsc-art-img {
+  align-self: flex-end;
   margin-right: 0;
 }
 

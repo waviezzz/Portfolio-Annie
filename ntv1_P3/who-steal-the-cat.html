@@ -226,7 +226,7 @@
       const lightboxClose = document.getElementById("wsc-lightbox-close");
 
       document
-        .querySelectorAll(".wsc-art-img:not(.no-lightbox)")
+        .querySelectorAll(".wsc-art-img:not(.no-lightbox), .wsc-concept-img")
         .forEach((img) => {
           img.addEventListener("click", () => {
             lightboxImg.src = img.src;

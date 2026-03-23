@@ -161,6 +161,7 @@
   margin-left: 0;
   aspect-ratio: 16 / 9;
   display: block;
+  border-radius: 10px;
 }
 
 /* ---- PROJECT BODY (dark section) ---- */
@@ -244,20 +245,24 @@
   flex-direction: column;
   min-height: 0;
   margin: 0;
+  overflow: hidden;
+  width: 65%;
+  margin-right: 6rem;
+  border-radius: 10px;
 }
 
 .up-art-img {
-  width: 65%;
+  width: 100%;
   height: auto;
   object-fit: cover;
   display: block;
-  margin-right: 6rem;
   cursor: zoom-in;
-  transition: opacity 0.25s ease;
+  transition: transform 0.3s ease;
+  will-change: transform;
 }
 
-.up-art-img:hover {
-  opacity: 0.8;
+.up-art-figure:hover .up-art-img {
+  transform: scale(1.04);
 }
 
 .up-art-caption {
@@ -293,12 +298,18 @@
 
 .up-char-figure {
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .up-char-figure .up-art-img {
   width: 100%;
   height: auto;
   margin-right: 0;
+}
+
+.up-char-figure:hover .up-art-img {
+  transform: scale(1.04);
 }
 
 /* ---- 03 CHARACTER DESIGN: storyboard row (80% centred) ---- */
@@ -311,12 +322,18 @@
 .up-storyboard-figure {
   width: 80%;
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .up-storyboard-figure .up-art-img {
   width: 100%;
   height: auto;
   margin-right: 0;
+}
+
+.up-storyboard-figure:hover .up-art-img {
+  transform: scale(1.04);
 }
 
 /* ---- 04 3D MODELING: images left, text right ---- */
@@ -358,12 +375,18 @@
 
 .up-env-figure {
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .up-env-figure .up-art-img {
   width: 100%;
   height: auto;
   margin-right: 0;
+}
+
+.up-env-figure:hover .up-art-img {
+  transform: scale(1.04);
 }
 
 /* ---- 06 SCENE ASSEMBLY: single centred image at 80% width ---- */
@@ -376,12 +399,18 @@
 .up-scene-figure {
   width: 80%;
   margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .up-scene-figure .up-art-img {
   width: 100%;
   height: auto;
   margin-right: 0;
+}
+
+.up-scene-figure:hover .up-art-img {
+  transform: scale(1.04);
 }
 
 /* ---- 08 KEY TAKEAWAYS 2×2 grid ---- */
