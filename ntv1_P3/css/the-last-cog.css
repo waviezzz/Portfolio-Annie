@@ -325,8 +325,12 @@
   will-change: transform;
 }
 
-.tlc-art-figure:hover .tlc-art-img {
+.tlc-art-figure:not(.tlc-ui-speech):hover .tlc-art-img {
   transform: scale(1.04);
+}
+
+.tlc-ui-speech .tlc-art-img {
+  cursor: default;
 }
 
 .tlc-lightbox {
