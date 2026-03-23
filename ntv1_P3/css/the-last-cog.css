@@ -320,6 +320,11 @@
 /* ---- LIGHTBOX ---- */
 .tlc-art-img {
   cursor: zoom-in;
+  transition: opacity 0.25s ease;
+}
+
+.tlc-art-img:hover {
+  opacity: 0.8;
 }
 
 .tlc-lightbox {

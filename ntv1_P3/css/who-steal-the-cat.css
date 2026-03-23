@@ -270,6 +270,11 @@
   display: block;
   margin-right: 6rem;
   cursor: zoom-in;
+  transition: opacity 0.25s ease;
+}
+
+.wsc-art-img:hover {
+  opacity: 0.8;
 }
 
 .wsc-art-caption {

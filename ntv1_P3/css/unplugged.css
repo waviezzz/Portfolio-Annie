@@ -253,6 +253,11 @@
   display: block;
   margin-right: 6rem;
   cursor: zoom-in;
+  transition: opacity 0.25s ease;
+}
+
+.up-art-img:hover {
+  opacity: 0.8;
 }
 
 .up-art-caption {

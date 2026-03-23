@@ -245,6 +245,11 @@
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   cursor: zoom-in;
+  transition: opacity 0.25s ease;
+}
+
+.vb-code-img:hover {
+  opacity: 0.8;
 }
 
 /* THE SOLUTION for continuous white outline */
@@ -276,6 +281,11 @@
   height: auto;
   display: block;
   cursor: zoom-in;
+  transition: opacity 0.25s ease;
+}
+
+.vb-art-img:hover {
+  opacity: 0.8;
 }
 
 .vb-art-img.no-lightbox {
