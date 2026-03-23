@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hamburger Icon Link -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+
+    <title>Annie's Portfolio</title>
+  </head>
+
+  <body id="body">
+    <!-- NAVIGATION -->
+    <header>
+      <nav class="main-menu grid content-grid-menu add-gutters-menu navbar">
+        <a class="logo" href="index.html">
+          <img src="img/logo.png" alt="Logo of my portolio"
+        /></a>
+        <div class="menu-container">
+          <!-- Hamburger icon: https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 -->
+          <span id="close-menu-btn" class="material-symbols-outlined"
+            >close</span
+          >
+          <!-- Active State: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_active_element -->
+          <a href="index.html" class="navigationItem active">Work</a>
+          <a href="about.html" class="navigationItem">About</a>
+          <a href="resume.html" class="navigationItem">Resume</a>
+        </div>
+        <a
+          href="https://www.linkedin.com/in/annievo03/"
+          class="nav-linkedin"
+          target="_blank"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <!-- ABOUT ME -->
+    <section id="about-me">
+      <h2 class="greeting-text">Hello I'm</h2>
+      <h1>ANNIE VO</h1>
+      <p class="intro-text">
+        I’m specialized in Animation, Illustration and Game Visual Design!
+      </p>
+      <div class="about-me-button-container">
+        <a class="button-nav" href="about.html">ABOUT ME </a>
+      </div>
+    </section>
+
+    <section id="feature-project">
+      <div class="projects-wrapper">
+        <h2 class="projects-heading">My Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <a href="the-last-cog.html" class="project-card__img-link">
+              <img
+                src="img/IAT312-project.png"
+                alt="The Last Cog project thumbnail"
+                class="project-card__img"
+              />
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">The Last Cog</h3>
+                <a
+                  href="the-last-cog.html"
+                  class="project-card__link"
+                  aria-label="View The Last Cog"
+                >
+                  <img
+                    src="img/window-page.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="project-card__icon"
+                  />
+                </a>
+              </div>
+              <p class="project-card__desc">
+                A narrative puzzle-platformer about climbing a clocktower to
+                uncover the mystery behind a town's missing chime.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="unplugged.html" class="project-card__img-link">
+              <img
+                src="img/IAT343-project.png"
+                alt="Unplugged project thumbnail"
+                class="project-card__img"
+              />
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Unplugged</h3>
+                <a
+                  href="unplugged.html"
+                  class="project-card__link"
+                  aria-label="View Unplugged"
+                >
+                  <img
+                    src="img/window-page.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="project-card__icon"
+                  />
+                </a>
+              </div>
+              <p class="project-card__desc">
+                A 3D sci-fi animation about a monster society confronting the
+                consequences of relying heavily on robots.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="vietnamese-breakfast.html" class="project-card__img-link">
+              <img
+                src="img/project1.png"
+                alt="Vietnamese Breakfast project thumbnail"
+                class="project-card__img"
+              />
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Vietnamese Breakfast</h3>
+                <a
+                  href="vietnamese-breakfast.html"
+                  class="project-card__link"
+                  aria-label="View Vietnamese Breakfast"
+                >
+                  <img
+                    src="img/window-page.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="project-card__icon"
+                  />
+                </a>
+              </div>
+              <p class="project-card__desc">
+                A cooking simulation game that enhances Vietnamese culture by
+                making multiple breakfast dishes.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="witch-winter.html" class="project-card__img-link">
+              <img
+                src="img/IAT410-project.png"
+                alt="Witch's Winter project thumbnail"
+                class="project-card__img"
+              />
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">
+                  Witch's Winter
+                  <span class="project-card__status">In Progress</span>
+                </h3>
+                <a
+                  href="witch-winter.html"
+                  class="project-card__link"
+                  aria-label="View Witch's Winter"
+                >
+                  <img
+                    src="img/window-page.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="project-card__icon"
+                  />
+                </a>
+              </div>
+              <p class="project-card__desc">
+                A puzzle-platformer exploring four seasons to restore lost magic
+                to the world.
+              </p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <a href="who-steal-the-cat.html" class="project-card__img-link">
+              <img
+                src="img/IAT313-project.png"
+                alt="Who Steals the Cat? project thumbnail"
+                class="project-card__img"
+              />
+            </a>
+            <div class="project-card__body">
+              <div class="project-card__header">
+                <h3 class="project-card__title">
+                  Who Steals the Cat?
+                  <span class="project-card__status">In Progress</span>
+                </h3>
+                <a
+                  href="who-steal-the-cat.html"
+                  class="project-card__link"
+                  aria-label="View Who Steals the Cat?"
+                >
+                  <img
+                    src="img/window-page.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="project-card__icon"
+                  />
+                </a>
+              </div>
+              <p class="project-card__desc">
+                A narrative-based detective board game focused on hidden roles
+                and clue discovery.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="grid content-grid-three-1 contact-section">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+          <a>
+            <img
+              src="img/email-icon.svg"
+              alt="Email page icon"
+              class="contact-icon"
+          /></a>
+          <p>waviezzz@gmail.com</p>
+        </div>
+        <div class="contact-container">
+          <a
+            ><img
+              src="img/linkedin-icon.svg"
+              alt="LinkedIn icon"
+              class="contact-icon"
+          /></a>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/annievo03/"
+              class="linkedin-link"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="back-to-top">
+      <div class="back-to-top-button-container">
+        <a class="button-nav" href="#body">BACK TO TOP</a>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid content-grid-three-2 footer-container">
+        <a href="index.html">
+          <img
+            src="img/logo-2.png"
+            class="logo2"
+            alt="Logo of my portolio, and it would take back to the main page if clicked"
+        /></a>
+        <h2>Annie's Portfolio</h2>
+
+        <div class="footer-menu-container">
+          <a href="index.html" class="footerNavigationItem">Work</a>
+          <a href="about.html" class="footerNavigationItem">About</a>
+          <a href="resume.html" class="footerNavigationItem">Resume</a>
+          <a href="https://www.linkedin.com/in/annievo03/" class="footerNavigationItem" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <p class="copyright">® 2025. Annie Vo. All right reserved.</p>
+    </footer>
+    <script>
+      //Active state
+      var header = document.getElementsByClassName("menu-container")[0];
+      var btns = header.getElementsByClassName("navigationItem");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+
+      //Add hamburger icon
+      const header2 = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      if (hamburgerBtn && closeMenuBtn) {
+        hamburgerBtn.addEventListener("click", () => {
+          header2.classList.toggle("show-mobile-menu");
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+          hamburgerBtn.click();
+        });
+      }
+    </script>
+  </body>
+</html>
