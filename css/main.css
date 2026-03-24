@@ -121,6 +121,17 @@ li {
   }
 }
 
+/* LinkedIn inside hamburger menu — hidden on desktop, shown on mobile */
+.menu-container .nav-linkedin-mobile {
+  display: none;
+}
+
+@media (width < 37rem) {
+  .menu-container .nav-linkedin-mobile {
+    display: flex;
+  }
+}
+
 header {
   width: 100%;
 }

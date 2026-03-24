@@ -372,20 +372,15 @@
   opacity: 1;
 }
 
-@media (max-width: 55rem) {
-  .tlc-takeaways-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Speech bubble: smaller, pulled up to overlap bottom-left of image 1 */
 .tlc-ui-speech {
   position: relative;
-  margin-top: -8.5rem;
-  margin-left: -4rem;
+  margin-top: -8.7rem;
+  margin-left: -6rem;
   margin-bottom: 4rem;
   z-index: 1;
   width: 80%;
+  transform: translate(50px, 0);
 }
 
 .tlc-ui-speech .tlc-art-img {
@@ -398,16 +393,6 @@
   display: flex;
   align-items: center;
   flex: 1;
-}
-
-@media (max-width: 55rem) {
-  .tlc-art-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .tlc-art-img {
-    width: 100%;
-  }
 }
 
 /* ---- Tablet ---- */
@@ -428,21 +413,51 @@
   .tlc-hero__value {
     font-size: 1.125rem;
   }
+
+  .tlc-objective__content {
+    padding: 0 4rem;
+  }
+
+  .tlc-objective__body {
+    font-size: 2.5rem;
+  }
+
+  .tlc-page .project-overview {
+    padding: 0 4rem;
+  }
+
+  .tlc-project-overview-inner {
+    padding: 4rem 4rem 0;
+  }
+
+  .tlc-art-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .tlc-art-img {
+    width: 100%;
+  }
+
+  .tlc-takeaways-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---- Mobile ---- */
 @media (max-width: 37rem) {
   .tlc-hero {
-    min-height: 90vh;
+    min-height: 0;
   }
 
   .tlc-hero__content {
-    padding: 3.5rem 1.75rem 4rem;
+    padding: 3.5rem 1.75rem 3.5rem;
   }
 
   .tlc-hero__title {
-    font-size: 1.85rem;
+    font-size: 2.75rem;
     margin-bottom: 2.5rem;
+    text-align: left;
   }
 
   .tlc-hero__info {
@@ -456,5 +471,67 @@
 
   .tlc-hero__label {
     font-size: 1.1rem;
+  }
+
+  .tlc-objective__content {
+    padding: 0 1.75rem;
+  }
+
+  .tlc-objective__body {
+    font-size: 2rem;
+  }
+
+  .tlc-page .project-overview {
+    padding: 0 1.75rem;
+  }
+
+  .tlc-project-overview-inner {
+    padding: 3.5rem 1.75rem 0;
+  }
+
+  /* Less space: art images sit closer to the 02 Ideation text above */
+  /* Targets only the 03 Art Direction section (unique .tlc-ad-images), not 04 UI Design */
+  .tlc-project-overview-inner:has(.tlc-ad-images) {
+    padding-top: 0;
+    margin-top: -1.2rem;
+  }
+
+  /* More gap: art-direction-4 breathes before the "03 Art Direction" h2 */
+  .tlc-art-grid {
+    gap: 3.5rem;
+  }
+
+  .tlc-project-text-2 {
+    max-width: 100%;
+  }
+
+  .tlc-art-text {
+    width: 100%;
+  }
+
+  .tlc-art-figure {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Speech bubble: overlap ui-design-1 on mobile like on desktop */
+  .tlc-ui-speech {
+    margin-top: -5rem;
+    margin-left: 0;
+    margin-bottom: -4rem;
+    transform: translate(-20px, -50px);
+  }
+
+  .tlc-ui-speech .tlc-art-img {
+    width: 60%;
+  }
+
+  .tlc-project-body h2 {
+    text-align: left;
+    margin: 0 0 1.5rem;
+  }
+
+  .tlc-objective__title {
+    text-align: left;
   }
 }

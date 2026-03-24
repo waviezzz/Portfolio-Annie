@@ -440,15 +440,15 @@
 /* ---- Mobile ---- */
 @media (max-width: 37rem) {
   .wsc-hero {
-    min-height: 90vh;
+    min-height: 0;
   }
 
   .wsc-hero__content {
-    padding: 3.5rem 1.75rem 4rem;
+    padding: 3.5rem 1.75rem 3.5rem;
   }
 
   .wsc-hero__title {
-    font-size: 1.85rem;
+    font-size: 2.75rem;
     margin-bottom: 2.5rem;
   }
 
@@ -465,6 +465,10 @@
     font-size: 1.1rem;
   }
 
+  .wsc-hero__title {
+    text-align: left;
+  }
+
   .wsc-objective__content {
     padding: 0 1.75rem;
   }
@@ -475,5 +479,32 @@
 
   .wsc-project-overview-inner {
     padding: 3.5rem 1.75rem 0;
+  }
+
+  .wsc-project-body h2 {
+    text-align: left;
+    margin: 0 0 1.5rem;
+  }
+
+  .wsc-objective__title {
+    text-align: left;
+  }
+
+  .wsc-project-text-2 {
+    max-width: 100%;
+  }
+
+  .wsc-art-text {
+    width: 100%;
+  }
+
+  .wsc-art-figure {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .wsc-in-progress {
+    padding: 3.5rem 1.75rem 0;
+    text-align: left;
   }
 }

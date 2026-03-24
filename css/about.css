@@ -166,26 +166,41 @@
     }
   }
 
+  .more-about-me-container {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 2rem 4rem;
+    box-sizing: border-box;
+  }
+
+  .more-about-me-detail {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .more-about-me-detail p {
-    margin-left: -5rem;
-    width: 90%;
+    margin: 0;
+    width: 85%;
   }
 
   .more-about-me-title {
-    margin-left: -5rem;
-    text-align: left;
+    margin: 0 auto 2rem;
+    width: 100%;
+    padding-top: 3rem;
+    text-align: center;
   }
 
   .person-image {
-    margin-top: 1rem;
-    width: 15rem;
+    width: 80%;
+    max-width: 18rem;
     height: auto;
-    margin: 0;
-    margin-left: -5rem;
-  }
-
-  .more-about-me-title {
-    width: 100%;
+    margin: 2rem auto 0;
+    display: block;
   }
 
   .skill-detail {
